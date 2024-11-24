@@ -4,7 +4,7 @@ import Item from './Item'
 import { ShopContext } from '../Context/ShopContext'
 
 const ProductList = () => {
-  const { all_product } = useContext(ShopContext)
+  const { all_product, new_collections } = useContext(ShopContext)
   const menProducts = all_product.filter((product) => product.category === "men");
   const womenProducts = all_product.filter((product) => product.category === "women");
   const kidProducts = all_product.filter((product) => product.category === "kid");
@@ -13,10 +13,10 @@ const ProductList = () => {
       {/* mens Collection */}
       <div className="mx-auto max-w-2xl px-4 py-16  sm:pt-24 lg:max-w-7xl lg:px-8">
 
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900 text-center md:text-start">Men's Collection</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900 text-center md:text-start font-sans">New Collection</h2>
 
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 px-6 md:px-0 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          {menProducts.map((product) => {
+          {new_collections.map((product) => {
             return <Item key={product.id} product={product} />
           })}
         </div>

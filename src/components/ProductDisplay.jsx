@@ -11,7 +11,7 @@ const ProductDisplay = (props) => {
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 my-20 md:gap-10 px-6 md:px-0'>
       <div className="flex md:1/2 gap-4">
-        <div className="flex flex-col gap-4 h-[500px]">
+        <div className="flex flex-col gap-4 md:h-[500px]">
             <img src={product.image} alt="" className='md:h-[163px] w-[100px]'/>
             <img src={product.image2} alt="" className='md:h-[163px] w-[100px]'/>
             <img src={product.image1} alt="" className='md:h-[163px] w-[100px]'/>
@@ -21,7 +21,7 @@ const ProductDisplay = (props) => {
         <img className='md:h-[580px]' src={product.image} alt="" />
         </div>
       </div>
-      <div className="flex md:1/2 flex-col">
+      <div className="flex md:1/2 flex-col mt-8 md:mt-0">
         <h1 className='text-[#3d3d3d] text-4xl font-bold'>{product.name}</h1>
         <div className="flex items-center gap-1 text-[#1c1c1c] text-lg mt-4">
             <Star fill='red'/>
