@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import banner from '../assets/womensBanner.png'
+import banner from '../assets/WomensBanner.png'
 import { ShopContext } from '../Context/ShopContext';
 import Item from '../components/Item';
 
