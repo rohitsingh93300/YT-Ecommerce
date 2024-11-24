@@ -72,6 +72,7 @@ import React, { useContext } from 'react'
 import { ShopContext } from '../Context/ShopContext'
 import { X } from 'lucide-react'
 import EmptyCart from '../assets/EmptyCart.png'
+import { Link } from 'react-router-dom'
 
 const CartItems = () => {
     const { getTotalCartAmount, all_product, cartItems, removeFromCart, getTotalCartItems } = useContext(ShopContext)
@@ -106,7 +107,7 @@ const CartItems = () => {
                     }
                     return null;
                 })}
-                <div className="flex flex-col lg:flex-row my-12 gap-10">
+                <div className="flex flex-col lg:flex-row my-12 gap-10 md:gap-32">
                     <div className="flex-1 flex flex-col gap-4">
                         <h1 className='text-lg font-bold'>Cart Totals</h1>
                         <div>
@@ -125,7 +126,9 @@ const CartItems = () => {
                                 <h3>${getTotalCartAmount()}</h3>
                             </div>
                         </div>
-                        <button className='w-full lg:w-64 h-14 bg-red-500 text-white font-semibold text-lg'>PROCEED TO CHECKOUT</button>
+                        <Link to='/login'>
+                        <button className='w-full lg:w-64 h-14 bg-red-500 text-white font-semibold text-lg'>PROCEED TO CHECKOUT</button>                       
+                        </Link>
                     </div>
                     <div className="flex-1 text-lg font-semibold">
                         <p className='text-gray-600'>If you have a promo code, enter it here:</p>
@@ -135,7 +138,8 @@ const CartItems = () => {
                         </div>
                     </div>
                 </div>
-            </div>}
+            </div>
+            }
            
 
         </div>

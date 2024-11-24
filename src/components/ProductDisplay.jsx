@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { ShopContext } from '../Context/ShopContext'
 import { Star } from 'lucide-react'
+import { Link } from 'react-router-dom'
 // import star_icon from '../Assets/star_icon.png'
 // import star_dull_icon from '../Assets/star_dull_icon.png'
 
@@ -48,7 +49,10 @@ const ProductDisplay = (props) => {
                 <div className='border bg-gray-100 p-4'>XXL</div>
             </div>
         </div>
+        <Link to='/cart'>
         <button onClick={()=>{addToCart(product.id)}} className='bg-red-500 text-white px-6 py-3 my-4 w-max'>ADD TO CART</button>
+        </Link>
+
         <p className='productdisplay-right-category'><span className='font-semibold'>Category :</span> Women, T-Shirt, Crop Top</p>
         <p className='productdisplay-right-category'><span className='font-semibold'>Tags :</span> Modern, Latest</p>
         
