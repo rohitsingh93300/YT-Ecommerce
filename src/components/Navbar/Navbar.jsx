@@ -50,7 +50,7 @@ const Navbar = () => {
                     )}
                 </div>
             </div>
-            <ResponsiveMenu showMenu={showMenu}/>
+            <ResponsiveMenu showMenu={showMenu} setShowMenu={setShowMenu}/>
         </div>
     )
 }
