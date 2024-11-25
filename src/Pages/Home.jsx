@@ -6,6 +6,7 @@ import ProductList from '../components/ProductList'
 import Banner from '../components/Banner'
 import MultipleBanner from '../components/MultipleBanner'
 import MultiBanner2 from '../components/MultiBanner2'
+import Details from '../components/Details'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
        {/* <Promo/> */}
       {/* <Categories/> */}
       <ProductList/>
+      <Details/>
     </div>
   )
 }

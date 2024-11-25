@@ -130,7 +130,7 @@ const CartItems = () => {
                         <button className='w-full lg:w-64 h-14 bg-red-500 text-white font-semibold text-lg'>PROCEED TO CHECKOUT</button>                       
                         </Link>
                     </div>
-                    <div className="flex-1 text-lg font-semibold">
+                    <div className="flex-1 w-full text-lg font-semibold">
                         <p className='text-gray-600'>If you have a promo code, enter it here:</p>
                         <div className="w-full lg:w-80 mt-2 flex">
                             <input type="text" placeholder='Promo code' className='flex-1 h-14 p-2 bg-gray-200' />

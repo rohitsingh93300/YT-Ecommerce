@@ -1,6 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../assets/Logo.png'
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaPinterest } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -33,10 +37,10 @@ const Footer = () => {
         <div className="mb-6 md:mb-0">
           <h3 className="text-xl font-semibold">Follow Us</h3>
           <div className="flex space-x-4 mt-2">
-            <a href="#" className="text-gray-200 hover:text-gray-400"><i className="fab fa-facebook-f"></i></a>
-            <a href="#" className="text-gray-200 hover:text-gray-400"><i className="fab fa-instagram"></i></a>
-            <a href="#" className="text-gray-200 hover:text-gray-400"><i className="fab fa-twitter"></i></a>
-            <a href="#" className="text-gray-200 hover:text-gray-400"><i className="fab fa-pinterest-p"></i></a>
+            <a href="#" className="text-gray-200 hover:text-red-500"><FaFacebook/></a>
+            <a href="#" className="text-gray-200 hover:text-red-500"><FaInstagram/></a>
+            <a href="#" className="text-gray-200 hover:text-red-500"><FaSquareXTwitter/></a>
+            <a href="#" className="text-gray-200 hover:text-red-500"><FaPinterest/></a>
           </div>
         </div>
 
